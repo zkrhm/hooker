@@ -1,0 +1,13 @@
+click==6.6
+Flask==0.11.1
+gitdb==0.6.4
+GitPython==2.0.8
+itsdangerous==0.24
+Jinja2==2.8
+MarkupSafe==0.23
+PyYAML==3.12
+redis==2.10.5
+rq==0.6.0
+smmap==0.9.0
+tinydb==3.2.1
+Werkzeug==0.11.11

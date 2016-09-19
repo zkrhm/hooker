@@ -1,0 +1,26 @@
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<div class="panel">
+<div class="panel-header">
+	Log List
+
+	<div class="pull-right">
+		<a href="/log/clear" class="btn btn-default btn-sm"> Clear Log</a>
+	</div>
+</div>
+<div class="panel-content">
+	<table class="table table-stiped">
+		<tr>
+			<th>Status</th>
+			<th>Message</th>
+		</tr>
+		{% for log in logs%}
+		<tr class="{{log.status if log.status=='success' else 'danger'}}">
+			<td>{{log.status}}</td>
+			<td>{{log.message}}</td>
+		</tr>
+		{% endfor %}
+	</table>	
+</div>
+
+</div>

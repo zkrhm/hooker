@@ -1,0 +1,11 @@
+description "uwsgi server config for git_puller"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+setuid user
+setgid www-data
+
+env PATH=/var/www/git_puller/env/bin
+chdir /var/www/git_puller
+exec uwsgi --ini wsgiconfig.ini

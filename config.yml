@@ -1,0 +1,13 @@
+---
+use_hipchat: False
+db_dir: /var/log/hooker/db.json
+pets:
+  key: chupacabra
+  branches: 
+    master:
+      name: master
+      docroot: /home/zkrhm/projects/pets_id-ui
+
+    release:
+      name: release
+      docroot: /home/zkrhm/projects/pets_id-ui
