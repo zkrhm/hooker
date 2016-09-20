@@ -1,5 +1,5 @@
-<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+{% extends "layout.html" %}
+{% block content %}
 <div class="panel">
 <div class="panel-header">
 	Log List
@@ -11,7 +11,8 @@
 <div class="panel-content">
 	<table class="table table-stiped">
 		<tr>
-			<th>Status</th>
+			<th>Project</th>
+			<th>Pull Status</th>
 			<th>Message</th>
 		</tr>
 		{% for log in logs%}
@@ -24,3 +25,5 @@
 </div>
 
 </div>
+
+{% endblock%}

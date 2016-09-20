@@ -35,7 +35,7 @@ def list():
     with open('config.yml','r') as f:
         config = yaml.load(f)
 
-    return jsonify(projects=config.keys())
+    return render_template("project_list.html")
 
 @application.route("/project/<string:project>/pull", methods=["GET","POST"])
 def pull(project):

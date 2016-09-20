@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel">
+			<div class="panel-heading">Projects
+				<div class="pull-right">
+					<button class="btn btn-xs btn-default"> + Add</button>
+				</div>
+			</div>
+			<div class="panel-body">
+				<table class="table table-striped">
+					<tr>
+						<th>Project</th>
+						<th>Pull path</th>
+						<th>Action</th>
+					</tr>
+					<tr>
+						<td>Project Apa</td>
+						<td>http://puller.pets.id/project/apa?key=sesuatu</td>
+						<td>
+							<button class="btn btn-primary btn-xs">Edit</button>
+							<button class="btn btn-xs btn-danger">Delete</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
