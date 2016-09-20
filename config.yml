@@ -6,8 +6,8 @@ pets:
   branches: 
     master:
       name: master
-      docroot: /home/zkrhm/projects/pets_id-ui
+      docroot: /var/www/pets
 
     release:
       name: release
-      docroot: /home/zkrhm/projects/pets_id-ui
+      docroot: /var/www/www-pets

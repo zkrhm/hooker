@@ -32,7 +32,7 @@ def git_pull(docroot,branch, config=None):
             req = urllib2.Request(url,data,{'Content-type':'application/json', 'Content-length' : dlen})
             f = urllib2.urlopen(req)
 
-        db.insert({"status":"failed","message":"pulling FAIL on branch : {} and docroot : {}".format(branch, docroot),"payload":json.dumps(e.__dict__)})
+        db.insert({"status":"failed","message":"pulling FAIL on branch : {} and docroot : {}".format(branch, docroot),"payload":str(e)})
         pass
         # send to hipchat (failed).
     else:
